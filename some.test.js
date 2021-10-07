@@ -1,4 +1,4 @@
-const SkylabArray = require("./SkylabArray");
+const SkylabArray = require("./skylabArray");
 
 describe("Given class SkylabArray creates new Object with a metod some()", () => {
     describe("when it recives callback function x => x > 10 and array [2, 5, 9, 11]", () => {
@@ -9,7 +9,7 @@ describe("Given class SkylabArray creates new Object with a metod some()", () =>
 
             const expected = true;
 
-            const result = newArr.some(callback);
+            const result = newArr.someSkylab(callback);
 
             expect(result).toBe(expected);
         });
@@ -22,7 +22,7 @@ describe("Given class SkylabArray creates new Object with a metod some()", () =>
 
             const expected = false;
 
-            const result = newArr.some(callback);
+            const result = newArr.someSkylab(callback);
 
             expect(result).toBe(expected);
         });
