@@ -1,5 +1,12 @@
 class SkylabArray {
-    length = 0;
+
+  lenghtSkylab = 0;
+  newObject = {};
+
+  pushSkylab(newValue) {
+    this.newObject[this.lengthSkylab] = newValue;
+    this.lengthSkylab += 1;
+  }
 
     some(callback) {
         for (let i = 0; i < this.length; i++) {
@@ -11,4 +18,4 @@ class SkylabArray {
     }
 }
 
-module.exports = SkylabArray;
+module.exports = { SkylabArray };
